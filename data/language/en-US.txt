@@ -1,0 +1,106 @@
+ aFamousGolfer: "Famous golfer "
+ aFlicssmsgclosi:"./flics/SMSG_closingfinal.bik", 0                  ; DATA XREF=sub_40f2a0+1243
+    align      4
+aSavedGamesauto:"saved games\&AutoSave1.sve", 0                     ; DATA XREF=sub_40f2a0+1064
+    align      8
+aTickerTape2:"Ticker Tape #2", 0                                 ; DATA XREF=sub_40f2a0+988
+    align      8
+aTickerTape1:"Ticker Tape #1", 0                                 ; DATA XREF=sub_40f2a0+949
+    align      8
+aStandard:"Standard", 0                                       ; DATA XREF=sub_40f2a0+803, sub_466440+183, sub_471c30+188, sub_471d20+3047
+    align      4
+aDefaultpro:"Default.pro", 0                                    ; DATA XREF=sub_40f2a0+790
+aThemesdefaultp:"Themes\Default.pro", 0                             ; DATA XREF=sub_40f2a0+769
+    align      4
+aInterfacetitle:"interface\TitleBase.pcx", 0                        ; DATA XREF=sub_40f2a0+528, sub_40f2a0+69832
+aSandboxMode:"Sandbox Mode", 0                                   ; DATA XREF=sub_40f2a0+498
+aPlayAChampions:"Play a Championship", 0                            ; DATA XREF=sub_40f2a0+487
+aSelectATheme:"Select A Theme", 0                                 ; DATA XREF=sub_40f2a0+476
+    align      32
+aStartNewGame:"Start New Game", 0                                 ; DATA XREF=sub_40f2a0+465
+    align      16
+aContinueSavedG:"Continue Saved Game", 0                            ; DATA XREF=sub_40f2a0+454
+aYourMembership:"Your membership is declining.", 0                  ; DATA XREF=sub_421070+718
+    align      4
+aHasDecidedNotT_4c5be4:" has decided not to buy a vacation home at your course. 'More fun in Malibu' ", 0 ; DATA XREF=sub_425b50+3774
+    align      4
+aSays:" says.", 0                                         ; DATA XREF=sub_425b50+3620, sub_425b50+3871
+    align      4
+aHasDecidedToBu:" has decided to buy a vacation home at your course. 'Groovy course!', ", 0 ; DATA XREF=sub_425b50+3523
+    db  0x00 ; '.'
+    db  0x73 ; 's'                                                 ; DATA XREF=sub_425b50+3439, sub_4672d0+3521
+    db  0x68 ; 'h'
+    db  0x65 ; 'e'
+    db  0x00 ; '.'
+    db  0x68 ; 'h'                                                 ; DATA XREF=sub_425b50+3425, sub_4672d0+3512
+    db  0x65 ; 'e'
+    db  0x00 ; '.'
+    db  0x00 ; '.'
+aInternationalC:"International celebrity ", 0                       ; DATA XREF=sub_425b50+3370
+    align      8
+aSheCommentsIll:"' she comments. 'I'll be back in a few months.'", 0 ; DATA XREF=sub_425b50+3281
+aHasDecidedNotT_4c5cd8:" has decided not to donate a landmark to your course. '", 0 ; DATA XREF=sub_425b50+3106
+aLookForYourLan:" Look for your landmark on the Improvements panel.", 0 ; DATA XREF=sub_425b50+2260
+    align      4
+aSheSays:"', she says.", 0                                   ; DATA XREF=sub_425b50+2197
+    align      4
+aSkillRatingIsU:"skill rating is up to ", 0                         ; DATA XREF=sub_425b50+2131
+    align      4
+aFunRatingIsUpT:"fun rating is up to ", 0                           ; DATA XREF=sub_425b50+2014
+    align      4
+aIllBeBackIfYou:" 'I'll be back if your ", 0                        ; DATA XREF=sub_425b50+1948
+aForANominalIns:" For a nominal installation fee you may place it anywhere on your course.", 0 ; DATA XREF=sub_425b50+1903
+    align      8
+aGolferStoriesW:
+    db         "golfer stories will proceed happily.", 0           ; DATA XREF=sub_425b50+1858
+    align      16
+aSSkillsWillImp:
+    db         "'s skills will improve rapidly.", 0                ; DATA XREF=sub_425b50+1851
+aNoDandelionsWi:
+    db         "no dandelions will appear.", 0                     ; DATA XREF=sub_425b50+1799
+    align      4
+aGolfersWillHav:
+    db         "golfers will have happy thoughts.", 0              ; DATA XREF=sub_425b50+1792
+    align      16
+aToYourCourseIn:
+    db         " to your course! In the area near this landmark ", 0 ; DATA XREF=sub_425b50+1727
+    align      4
+aHasDecidedToDo:
+    db         " has decided to donate a", 0                       ; DATA XREF=sub_425b50+1674
+    align      64
+aWealthyHeiress:
+    db         "Wealthy Heiress ", 0                               ; DATA XREF=sub_425b50+1511, sub_45d750+3458
+    align      4
+aHeComments:
+    db         "' he comments.", 0                                 ; DATA XREF=sub_425b50+1434
+    align      4
+aHasDecidedNotT_4c5ee4:        // aHasDecidedNotT
+    db         " has decided not to approve your expansion request. '", 0 ; DATA XREF=sub_425b50+1259
+    align      4
+aHeSays:
+    db         "', he says.", 0                                    ; DATA XREF=sub_425b50+1151
+aSkillRatingIsO:
+    db         "skill rating is over ", 0                          ; DATA XREF=sub_425b50+1074
+    align      64
+aFunRatingIsOve:
+    db         "fun rating is over ", 0                            ; DATA XREF=sub_425b50+946
+aIllBeBackAgain:
+    db         " 'I'll be back again if your ", 0                  ; DATA XREF=sub_425b50+889
+    align      4
+aHasDecidedToAp:
+    db         " has decided to approve an expansion request!", 0  ; DATA XREF=sub_425b50+844
+    align      4
+aCountyCommissi:
+    db         "County commissioner ", 0                           ; DATA XREF=sub_425b50+736, sub_426b00+5121, sub_45d750+3062
+    align      4
+aHeFumes:
+    db         "' he fumes.", 0                                    ; DATA XREF=sub_425b50+659
+aHasQuitEvenTho:
+    db         " has quit, even though ", 0                        ; DATA XREF=sub_425b50+596, sub_425b50+1371, sub_425b50+3218
+aMyPartner:
+    db         "My partner ", 0                                    ; DATA XREF=sub_425b50+539, sub_425b50+1314, sub_425b50+3161
+aHasDecidedNotT_4c5fec:        // aHasDecidedNotT
+    db         " has decided not to invest in your course. '", 0   ; DATA XREF=sub_425b50+484
+    align      4
+aForASeatOnTheB:
+    db         " for a seat on the board' he says.", 0
