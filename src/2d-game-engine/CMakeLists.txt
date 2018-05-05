@@ -1,9 +1,20 @@
 # CMAKE project for libopenSMSG (core OpenSMSG component)
 cmake_minimum_required(VERSION 3.1)
 
-add_executable(opensmsg-engine )
+#set(HEADERS Game.hpp )
+#set(SRC_LIST main.cpp Game.cpp)
 
-target_link_libraries(opensmsg-engine
+add_executable(2d-game-engine
+#        ${SRC_LIST} ${HEADERS}
+        main.cpp
+        Game.cpp
+        Game.h
+        TextureManager.cpp
+        TextureManager.h
+        )
+
+target_link_libraries(2d-game-engine
+
         "-framework Cocoa"
         "-framework IOKit"
         "-framework OpenGL"

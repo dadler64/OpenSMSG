@@ -1,9 +1,16 @@
 # CMAKE project for libopenSMSG (core OpenSMSG component)
 cmake_minimum_required(VERSION 3.1)
 
-add_executable(opensmsg-engine )
 
-target_link_libraries(opensmsg-engine
+
+add_executable(opensmsg-terrain
+        Terrain.cpp
+        Terrain.h
+        Tile.cpp
+        Tile.h
+        )
+
+target_link_libraries(opensmsg-terrain
         "-framework Cocoa"
         "-framework IOKit"
         "-framework OpenGL"
