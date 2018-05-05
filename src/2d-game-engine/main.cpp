@@ -1,18 +1,31 @@
-#include "Game.hpp"
+#include "Game.h"
 
 Game *game = nullptr;
 
-int main(int argc, const char * argv[]) {
-    
+int main(int argc, const char * argv[])
+{
+    const int FPS = 60;
+    const int frameDelay = 1000/FPS;
+
+    Uint32 frameStart;
+    int frameTime;
+
     game = new Game();
+    game->init("BirchEngine", 800, 600, false);
     
-    game->init("BirchEngine", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, false);
-    
-    while (game->running()) {
+    while (game->running())
+    {
+        frameStart = SDL_GetTicks();
         game->handleEvents();
         game->update();
         game->render();
-        
+
+        frameTime = SDL_GetTicks() - frameStart;
+
+        if (frameDelay > frameTime)
+        {
+            SDL_Delay(static_cast<Uint32>(frameDelay - frameTime));
+        }
     }
     
     game->clean();

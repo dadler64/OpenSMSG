@@ -22,7 +22,7 @@ public:
     
 private:
     int counter = 0;
-    int size = 128;
+    int size = 64;
     bool isRunning = false;
     SDL_Window *window;
     SDL_Renderer *renderer;

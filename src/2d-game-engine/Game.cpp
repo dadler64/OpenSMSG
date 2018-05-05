@@ -6,7 +6,8 @@
 //  Copyright © 2018 Daniel Adler. All rights reserved.
 //
 
-#include "Game.hpp"
+#include "Game.h"
+#include "TextureManager.h"
 
 SDL_Texture* playerTex;
 SDL_Rect srcR, destR;
@@ -21,7 +22,7 @@ Game::~Game()
     
 }
 
-void Game::init(const char *title, int xpos, int ypos, int width, int height, bool fullscreen)
+void Game::init(const char *title, int width, int height, bool fullscreen)
 {
     int flags = 0;
     
@@ -32,7 +33,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     
     if(SDL_Init(SDL_INIT_EVERYTHING) == 0)
     {
-        window = SDL_CreateWindow(title, xpos, ypos, width, height, flags);
+        window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags);
         renderer = SDL_CreateRenderer(window, -1, 0);
         if (renderer)
         {
@@ -41,10 +42,8 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
         
         isRunning = true;
     }
-//    /Users/adlerd/workspace/Xcode Projects/2D_GameEngine/assets/player.png
-    SDL_Surface* tmpSurface = IMG_Load("resources/player.png");
-    playerTex = SDL_CreateTextureFromSurface(renderer, tmpSurface);
-    SDL_FreeSurface(tmpSurface);
+
+    playerTex = TextureManager::LoadTexture("resources/player.png", renderer);
 }
 
 void Game::handleEvents()
@@ -64,9 +63,10 @@ void Game::handleEvents()
 void Game::update()
 {
     counter++;
-    
-    destR.h = 32;
-    destR.w = 32;
+
+    destR.h = size;
+    destR.w = size;
+    destR.x = counter;
 }
 
 void Game::render()
